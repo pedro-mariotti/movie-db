@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Mono:ital,wght@0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cinefilia</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="navTitle">
+          <img
+            id="navImg"
+            src="../../assets/woolly-popcorn.png"
+            alt="Popcorn icon"
+          />
+          <h2>Cine<span>Filia</span></h2>
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>Filmes</li>
+        </ul>
+      </nav>
+      <div id="topFilmReelDiv"></div>
+    </header>
+    <main>
+      <section id="introSection">
+        <div>
+          <h1>Cinefilia</h1>
+          <h3>ci·ne·fi·li·a sf Admiração excessiva pelo cinema.</h3>
+        </div>
+        <div id="introContentDiv">
+          <div>
+            <h2>A biblioteca de filme feita por cinéfilos para cinéfilos!</h2>
+            <p>
+              Nascida por uma paixão de filmes e da cultura cinematográfica,
+              Cinefilia veio como uma ferramenta para ajudar outros cinéfilos a
+              procurarem mais sobre filmes para trazer aquelas memórias mágicas
+              criadas ao assistir um incrível filme pela primeira vez
+            </p>
+          </div>
+          <img
+            id="introImg"
+            src="../../assets/movieNight.png"
+            alt="Friends watching a movie"
+          />
+        </div>
+      </section>
+      <section id="mainSection">
+        <div class="sideDeco"></div>
+        <div id="movieCarousel">
+          <div class="carouselItem">
+            <img
+              class="carouselImg"
+              src="https://images.unsplash.com/photo-1638913974023-cef988e81629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt=""
+            />
+            <div class="carouselMovieInfoDiv">
+              <h4 class="filmTitle">Filme 1</h4>
+              <div class="InfoFirstSubDiv">
+                <p>Release date: <span class="releaseDate"></span></p>
+                <p>Original language: <span class="originalLanguage"></span></p>
+              </div>
+              <p class="movieOverview">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente illum adipisci eos hic vitae quae. Quo similique atque
+                cum ut culpa omnis, temporibus aperiam quam placeat iusto totam
+                aut tempora.
+              </p>
+              <div class="InfoSecondSubDiv">
+                <p>Rating: <span class="rating"></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="carouselItem">
+            <img
+              class="carouselImg"
+              src="https://images.unsplash.com/photo-1638913658211-c999de7fe786?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871"
+              alt=""
+            />
+            <div class="carouselMovieInfoDiv">
+              <h4 class="filmTitle">Filme 2</h4>
+              <div class="InfoFirstSubDiv">
+                <p>Release date: <span class="releaseDate">11/11/2011</span></p>
+                <p>
+                  Original language:
+                  <span class="originalLanguage">English</span>
+                </p>
+              </div>
+              <p class="movieOverview">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente illum adipisci eos hic vitae quae. Quo similique atque
+                cum ut culpa omnis, temporibus aperiam quam placeat iusto totam
+                aut tempora.
+              </p>
+              <div class="InfoSecondSubDiv">
+                <b>Rating: <span class="rating">7.2</span>/10</b>
+              </div>
+            </div>
+          </div>
+          <div class="carouselItem">
+            <img
+              class="carouselImg"
+              src="https://images.unsplash.com/photo-1652811232177-e4ccfc75dd25?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"
+              alt=""
+            />
+            <div class="carouselMovieInfoDiv">
+              <h4 class="filmTitle">Filme 3</h4>
+              <div class="InfoFirstSubDiv">
+                <p>Release date: <span class="releaseDate"></span></p>
+                <p>Original language: <span class="originalLanguage"></span></p>
+              </div>
+              <p class="movieOverview">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente illum adipisci eos hic vitae quae. Quo similique atque
+                cum ut culpa omnis, temporibus aperiam quam placeat iusto totam
+                aut tempora.
+              </p>
+              <div class="InfoSecondSubDiv">
+                <p>Rating: <span class="rating"></span></p>
+              </div>
+            </div>
+          </div>
+          <div onclick="showImg(-1)" id="prev">
+            <img
+              class="chevronImg"
+              src="../../assets/chevron-left.svg"
+              alt="Chevron left"
+            />
+          </div>
+          <div onclick="showImg(1)" id="next">
+            <img
+              class="chevronImg"
+              src="../../assets/chevron-right.svg"
+              alt="Chevron right"
+            />
+          </div>
+        </div>
+        <div class="sideDeco"></div>
+        <!-- <div id="searchDiv">
+          <input
+            type="text"
+            name="searchbar"
+            id="searchbarInput"
+            placeholder="Pesquise um filme aqui..."
+          />
+        </div> -->
+      </section>
+    </main>
+    <div id="bottomFilmReel"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
